@@ -29,7 +29,31 @@ const styles = StyleSheet.create({
     fontSize: RFValue(28),
     fontFamily: "Bubblegum-Sans"
   },
-  cardContainer: {
-    flex: 0.93
+  fieldsContainer: {
+    flex: 0.85
+  },
+  previewImage: {
+    width: "93%",
+    height: RFValue(250),
+    alignSelf: "center",
+    borderRadius: RFValue(10),
+    marginVertical: RFValue(10),
+    resizeMode: "contain"
+  },
+  inputFont: {
+    height: RFValue(40),
+    borderColor: "white",
+    borderWidth: RFValue(1),
+    borderRadius: RFValue(10),
+    paddingLeft: RFValue(10),
+    color: "white",
+    fontFamily: "Bubblegum-Sans"
+  },
+  inputFontExtra: {
+    marginTop: RFValue(15)
+  },
+  inputTextBig: {
+    textAlignVertical: "top",
+    padding: RFValue(5)
   }
 });
