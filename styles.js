@@ -4,7 +4,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#15193c"
   },
   droidSafeArea: {
-    marginTop: Platform.OS === "android" ? StatusBar.currentHeight : RFValue(35)
+    marginTop: Platform.OS === "android" ? StatusBar.currentHeight : 0
   },
   appTitle: {
     flex: 0.07,
@@ -29,31 +29,35 @@ const styles = StyleSheet.create({
     fontSize: RFValue(28),
     fontFamily: "Bubblegum-Sans"
   },
-  fieldsContainer: {
+  screenContainer: {
     flex: 0.85
   },
-  previewImage: {
-    width: "93%",
-    height: RFValue(250),
-    alignSelf: "center",
-    borderRadius: RFValue(10),
-    marginVertical: RFValue(10),
-    resizeMode: "contain"
+  profileImageContainer: {
+    flex: 0.5,
+    justifyContent: "center",
+    alignItems: "center"
   },
-  inputFont: {
-    height: RFValue(40),
-    borderColor: "white",
-    borderWidth: RFValue(1),
-    borderRadius: RFValue(10),
-    paddingLeft: RFValue(10),
+  profileImage: {
+    width: RFValue(140),
+    height: RFValue(140),
+    borderRadius: RFValue(70)
+  },
+  nameText: {
     color: "white",
-    fontFamily: "Bubblegum-Sans"
+    fontSize: RFValue(40),
+    fontFamily: "Bubblegum-Sans",
+    marginTop: RFValue(10)
   },
-  inputFontExtra: {
-    marginTop: RFValue(15)
+  themeContainer: {
+    flex: 0.2,
+    flexDirection: "row",
+    justifyContent: "center",
+    marginTop: RFValue(20)
   },
-  inputTextBig: {
-    textAlignVertical: "top",
-    padding: RFValue(5)
+  themeText: {
+    color: "white",
+    fontSize: RFValue(30),
+    fontFamily: "Bubblegum-Sans",
+    marginRight: RFValue(15)
   }
 });
